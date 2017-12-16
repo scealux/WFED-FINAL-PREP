@@ -1,0 +1,21 @@
+/*CSS*/
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body {
+     /* font-family: 'Fredoka One', sans-serif; */
+     text-align: center;
+}
+a {
+     color: black;
+     text-decoration: none;
+     transition: text-decoration 1s;
+}
+a:hover {
+     text-decoration: underline;
+}
+#js {
+     margin-top: 20px;
+}
+#wrongThing {
+     display: none;
+}
