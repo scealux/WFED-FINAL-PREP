@@ -22,7 +22,7 @@ var vm = new Vue ({
                               var ob = json.response.ob;
 															var extension = "";
                               console.log(ob);
-															if (ob.windMPH > 0){
+															if ((ob.windMPH > 0) && (ob.tempF != ob.feelslikeF)){
 																extension = 'A '+ob.windMPH+'MPH wind heading '+ob.windDir+' makes it feel like '+ob.feelslikeF+'°, though.';
 															}
                               $('#js').html('The current weather in '+searchedCity+', '+searchedState+' is ' + ob.weather.toLowerCase() + ' with a temperature of ' + ob.tempF + '°. '+extension);
